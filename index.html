@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RunBud — Il tuo coach AI per la corsa</title>
+  <meta name="description" content="RunBud è il tuo coach AI personale per la corsa. Piani settimanali personalizzati, analisi della fatica, supporto multilingue. Scaricalo gratis su App Store.">
+  <meta name="theme-color" content="#070B18">
+  <meta property="og:title" content="RunBud — Il tuo coach AI per la corsa">
+  <meta property="og:description" content="Piani di allenamento personalizzati con intelligenza artificiale. Gratis su App Store.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ── NAV ───────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <div class="logo-icon">🏃</div>
+        Run<span class="bud">Bud</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Funzionalità</a>
+        <a href="#how">Come funziona</a>
+        <a href="#languages">Lingue</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="#download" class="btn-nav">Scarica gratis</a>
+      </div>
+      <button class="nav-mobile-toggle" id="menuBtn" aria-label="Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="container">
+    <div class="hero-inner">
+      <!-- Left: text -->
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Disponibile su App Store
+        </div>
+        <h1 class="hero-title">
+          <span>Il coach AI</span>
+          <span class="gradient-text">che corre</span>
+          <span>con te.</span>
+        </h1>
+        <p class="hero-sub">
+          RunBud analizza le tue corse, calcola la fatica e genera piani di allenamento personalizzati. Come avere un coach professionista sempre in tasca.
+        </p>
+        <div class="hero-cta">
+          <a href="#download" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            App Store
+          </a>
+          <a href="#features" class="btn-secondary">
+            Scopri di più
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <div class="stat-value"><span data-counter="4" data-suffix="">4</span> lingue</div>
+            <div class="stat-label">IT · EN · DE · ES</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">100% <span style="color:var(--green)">AI</span></div>
+            <div class="stat-label">Piani personalizzati</div>
+          </div>
+          <div class="stat">
+            <div class="stat-value">Gratis</div>
+            <div class="stat-label">Piano base</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: phone mockup -->
+      <div class="hero-visual">
+        <div class="phone-wrapper">
+          <div class="phone-glow"></div>
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-ui-header">
+                <div class="phone-greeting">Buongiorno, <span>Simone</span> 👋</div>
+                <div class="phone-icon-row">
+                  <div class="phone-icon"></div>
+                  <div class="phone-icon"></div>
+                </div>
+              </div>
+              <div class="phone-card">
+                <div class="phone-card-label">Allenamento di oggi</div>
+                <div class="phone-card-title">Ripetute Brevi</div>
+                <div class="phone-card-sub">6 × 3min veloci + 90s recupero</div>
+                <div class="phone-card-row">
+                  <div class="phone-chip">35 min</div>
+                  <div class="phone-chip pink">⚡ Alta intensità</div>
+                  <div class="phone-chip green">✓ GPS</div>
+                </div>
+              </div>
+              <div class="phone-mini-card">
+                <div class="phone-mini-icon">💤</div>
+                <div>
+                  <div class="phone-mini-title">Fatica: Riposato</div>
+                  <div class="phone-mini-sub">Pronto per allenarsi al 100%</div>
+                </div>
+              </div>
+              <div class="phone-mini-card">
+                <div class="phone-mini-icon">📅</div>
+                <div>
+                  <div class="phone-mini-title">Piano settimanale AI</div>
+                  <div class="phone-mini-sub">Adattato ai tuoi progressi</div>
+                </div>
+              </div>
+              <div class="phone-btn">Inizia allenamento →</div>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="float-badge float-badge-1">
+            <div class="float-badge-icon">🎯</div>
+            <div>
+              <div class="float-badge-label">Obiettivo</div>
+              <div class="float-badge-value">Performance</div>
+            </div>
+          </div>
+          <div class="float-badge float-badge-2">
+            <div class="float-badge-icon">❤️</div>
+            <div>
+              <div class="float-badge-label">FC media</div>
+              <div class="float-badge-value">148 bpm</div>
+            </div>
+          </div>
+          <div class="float-badge float-badge-3">
+            <div class="float-badge-icon">📈</div>
+            <div>
+              <div class="float-badge-label">Questa settimana</div>
+              <div class="float-badge-value">+12% volume</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ───────────────────────────────────────────── -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Funzionalità</div>
+      <h2 class="section-title">Tutto ciò che ti serve<br>per correre meglio</h2>
+      <p class="section-sub">RunBud combina intelligenza artificiale e scienza dell'allenamento per aiutarti a raggiungere i tuoi obiettivi, qualunque essi siano.</p>
+    </div>
+    <div class="features-grid">
+
+      <!-- Featured card -->
+      <div class="feature-card featured">
+        <div>
+          <div class="feature-icon violet">🤖</div>
+          <h3 class="feature-title">Coach AI Personalizzato</h3>
+          <p class="feature-desc">Il tuo piano cambia ogni settimana in base ai tuoi progressi reali, alla fatica accumulata e all'obiettivo scelto. Non esiste un piano uguale per tutti.</p>
+          <span class="feature-tag">✦ Powered by AI</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="background:rgba(108,99,255,0.10);border:1px solid rgba(108,99,255,0.2);border-radius:14px;padding:14px;">
+            <div style="font-size:11px;color:var(--text-muted);font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">Messaggio del coach</div>
+            <div style="font-size:13px;color:var(--text-sub);line-height:1.5;">"Ottimo lavoro questa settimana. Il volume è cresciuto del 12% — oggi punta alla qualità, non alla quantità."</div>
+          </div>
+          <div style="background:rgba(74,222,128,0.08);border:1px solid rgba(74,222,128,0.18);border-radius:14px;padding:12px;display:flex;align-items:center;gap:10px;">
+            <span style="font-size:20px;">💚</span>
+            <div style="font-size:13px;color:#4ADE80;font-weight:600;">Fatica: Riposato — pronto per allenarsi</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon green">📅</div>
+        <h3 class="feature-title">Piano Settimanale</h3>
+        <p class="feature-desc">Visualizza l'intera settimana con allenamenti e giorni di riposo pianificati dall'AI. Ogni giorno ha una spiegazione dettagliata del "perché".</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon pink">⚡</div>
+        <h3 class="feature-title">Analisi della Fatica</h3>
+        <p class="feature-desc">Un algoritmo analizza le tue ultime corse e calcola il tuo livello di fatica: Riposato, Normale, Stanco o Alta fatica. Allena al momento giusto.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon blue">❤️</div>
+        <h3 class="feature-title">Monitor Cardiaco BLE</h3>
+        <p class="feature-desc">Connetti qualsiasi cardiofrequenzimetro Bluetooth e monitora la frequenza cardiaca in tempo reale durante ogni allenamento.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon yellow">🏆</div>
+        <h3 class="feature-title">Obiettivi & Milestones</h3>
+        <p class="feature-desc">Scegli il tuo obiettivo: performance, resistenza, dimagrimento o preparazione gara. Il piano si adatta automaticamente. Celebra ogni traguardo.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon violet">📊</div>
+        <h3 class="feature-title">Progressi Dettagliati</h3>
+        <p class="feature-desc">Grafici settimanali, distribuzione degli allenamenti, report AI e storico completo delle tue sessioni per capire come stai migliorando.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── HOW IT WORKS ───────────────────────────────────────── -->
+<section class="how-section" id="how">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Come funziona</div>
+      <h2 class="section-title">Da zero a runner<br>in quattro passi</h2>
+      <p class="section-sub">RunBud impara da te. Più corri, più il piano diventa preciso e calibrato sul tuo corpo.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number"><span class="step-emoji">👤</span></div>
+        <h3 class="step-title">Crea il profilo</h3>
+        <p class="step-desc">Inserisci il tuo livello, obiettivo e FC max. Bastano 60 secondi.</p>
+      </div>
+      <div class="step">
+        <div class="step-number"><span class="step-emoji">🤖</span></div>
+        <h3 class="step-title">L'AI genera il piano</h3>
+        <p class="step-desc">Il coach elabora un piano personalizzato per la tua settimana.</p>
+      </div>
+      <div class="step">
+        <div class="step-number"><span class="step-emoji">🏃</span></div>
+        <h3 class="step-title">Esegui l'allenamento</h3>
+        <p class="step-desc">Segui le istruzioni passo-passo con GPS e monitor cardiaco.</p>
+      </div>
+      <div class="step">
+        <div class="step-number"><span class="step-emoji">📈</span></div>
+        <h3 class="step-title">Il piano si adatta</h3>
+        <p class="step-desc">Ogni settimana l'AI analizza i tuoi progressi e aggiorna tutto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── LANGUAGES ─────────────────────────────────────────── -->
+<section class="langs-section" id="languages">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Multilingue</div>
+      <h2 class="section-title">Parla la tua lingua</h2>
+      <p class="section-sub">L'app e il coach AI rispondono nella tua lingua. I piani, i messaggi e le descrizioni sono generati nativamente, non tradotti.</p>
+    </div>
+    <div class="langs-row">
+      <div class="lang-pill"><span class="lang-flag">🇮🇹</span> Italiano</div>
+      <div class="lang-pill"><span class="lang-flag">🇬🇧</span> English</div>
+      <div class="lang-pill"><span class="lang-flag">🇩🇪</span> Deutsch</div>
+      <div class="lang-pill"><span class="lang-flag">🇪🇸</span> Español</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ───────────────────────────────────────── -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="section-header centered">
+      <div class="section-label">Recensioni</div>
+      <h2 class="section-title">Cosa dicono i runner</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Finalmente un'app che non mi dà lo stesso piano per tutti. Dopo 3 settimane ho già migliorato il mio ritmo di 20 secondi per km."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Marco T.</div>
+            <div class="testimonial-meta">Runner amatoriale · Milano</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"L'analisi della fatica è una svolta. Prima mi allenavo troppo o troppo poco — ora il coach capisce quando ho bisogno di recupero."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div>
+            <div class="testimonial-name">Sara L.</div>
+            <div class="testimonial-meta">Maratoneta · Roma</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"Das Beste: Die KI versteht meinen Trainingsstand wirklich. Der Plan passt sich jede Woche automatisch an. Einfach genial."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">K</div>
+          <div>
+            <div class="testimonial-name">Klaus M.</div>
+            <div class="testimonial-meta">Hobby-Läufer · München</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA / DOWNLOAD ─────────────────────────────────────── -->
+<section class="cta-section" id="download">
+  <div class="cta-bg"></div>
+  <div class="container">
+    <div class="cta-card">
+      <div class="section-label" style="justify-content:center;">Scarica ora</div>
+      <h2 class="cta-title">Inizia a correre<br><span class="gradient-text">più forte, oggi.</span></h2>
+      <p class="cta-sub">Gratuito per sempre con il piano base. Nessuna carta di credito richiesta.</p>
+      <div class="cta-btns">
+        <a href="https://apps.apple.com" class="appstore-btn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div>
+            <span class="appstore-btn-sub">Scarica su</span>
+            <span class="appstore-btn-main">App Store</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="footer-logo">
+          <div class="logo-icon">🏃</div>
+          Run<span class="bud">Bud</span>
+        </a>
+        <p class="footer-desc">Il tuo coach AI personale per la corsa. Piani personalizzati, analisi della fatica e supporto multilingue.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigazione</h4>
+        <ul>
+          <li><a href="#features">Funzionalità</a></li>
+          <li><a href="#how">Come funziona</a></li>
+          <li><a href="#languages">Lingue</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legale</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="privacy.html#terms">Termini di utilizzo</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contatti</h4>
+        <ul>
+          <li><a href="mailto:support@runbud.app">support@runbud.app</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 RunBud. Tutti i diritti riservati.</p>
+      <p class="footer-made">Fatto con <span>♥</span> in Italia</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
