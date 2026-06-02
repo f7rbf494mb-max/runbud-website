@@ -34,7 +34,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, observerOptions);
 
-document.querySelectorAll('.feature-card, .step, .testimonial-card, .lang-pill').forEach(el => {
+document.querySelectorAll('.feature-card, .pricing-card, .step, .testimonial-card, .lang-pill').forEach(el => {
   observer.observe(el);
 });
 
