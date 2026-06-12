@@ -84,6 +84,12 @@ body {
   display: flex; align-items: center; justify-content: center;
   font-size: 18px;
 }
+.logo-icon-img {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
 .nav-logo .bud { color: var(--accent-light); }
 .nav-links { display: flex; align-items: center; gap: 32px; }
 .nav-links a {
@@ -694,6 +700,9 @@ section { padding: 100px 0; }
   border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
   font-size: 16px;
+}
+.footer-brand .footer-logo .logo-icon-img {
+  width: 34px; height: 34px;
 }
 .footer-desc { font-size: 13px; color: var(--text-muted); max-width: 240px; line-height: 1.6; }
 .footer-links h4 { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 16px; }
