@@ -677,6 +677,8 @@ section { padding: 100px 0; }
 .appstore-btn svg { width: 24px; height: 24px; }
 .appstore-btn-sub { font-size: 10px; font-weight: 500; opacity: 0.6; display: block; }
 .appstore-btn-main { font-size: 16px; font-weight: 800; display: block; line-height: 1.1; }
+.appstore-btn-android { background: #1a1a2e; color: #fff; border: 1px solid rgba(61,220,132,0.3); }
+.appstore-btn-android:hover { transform: none !important; box-shadow: 0 4px 24px rgba(0,0,0,0.3) !important; }
 
 /* ── FOOTER ───────────────────────────────────────────────── */
 .footer {
