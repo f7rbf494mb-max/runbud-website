@@ -41,9 +41,9 @@
     <div class="privacy-hero">
       <div class="section-label">Legale</div>
       <h1>Privacy Policy</h1>
-      <p>Ultimo aggiornamento: 1 giugno 2025</p>
+      <p>Ultimo aggiornamento: 11 ottobre 2026</p>
       <div style="margin-top:16px;">
-        <span class="privacy-date">📅 Aggiornato: 1 giugno 2025</span>
+        <span class="privacy-date">📅 Aggiornato: 11 ottobre 2026</span>
       </div>
     </div>
 
@@ -71,9 +71,9 @@
 
         <div class="privacy-section" id="intro">
           <h2>1. Introduzione</h2>
-          <p>Benvenuto in RunBud ("noi", "nostra", "app"). Questa Privacy Policy descrive come raccogliamo, utilizziamo e proteggiamo le informazioni personali degli utenti dell'applicazione iOS RunBud.</p>
+          <p>Benvenuto in RunBud ("noi", "nostra", "app"). Questa Privacy Policy descrive come raccogliamo, utilizziamo e proteggiamo le informazioni personali degli utenti dell'applicazione RunBud, disponibile su iOS e Android.</p>
           <p>Utilizzando RunBud, accetti le pratiche descritte in questa policy. Se non sei d'accordo, ti preghiamo di non utilizzare l'app.</p>
-          <p>RunBud è sviluppata da un singolo sviluppatore indipendente e distribuita tramite Apple App Store. Il Bundle ID dell'app è <strong>com.pacemate.app</strong>.</p>
+          <p>RunBud è sviluppata da un singolo sviluppatore indipendente e distribuita tramite Apple App Store e Google Play Store. Il Bundle ID dell'app è <strong>com.pacemate.app</strong>.</p>
         </div>
 
         <div class="privacy-section" id="data-collected">
@@ -85,10 +85,20 @@
             <li><strong>Preferenze</strong>: modalità allenamento (GPS outdoor / tapis roulant), lingua dell'app, impostazioni notifiche.</li>
           </ul>
 
+          <h3>Dati di posizione (GPS)</h3>
+          <p>RunBud raccoglie dati di posizione GPS durante le sessioni di allenamento outdoor. In dettaglio:</p>
+          <ul>
+            <li><strong>Cosa raccogliamo</strong>: coordinate geografiche (latitudine e longitudine) durante l'allenamento, per tracciare il percorso.</li>
+            <li><strong>Perché lo raccogliamo</strong>: per calcolare la distanza percorsa, visualizzare il percorso sulla mappa e generare le statistiche dell'allenamento.</li>
+            <li><strong>Come lo utilizziamo</strong>: i dati GPS vengono salvati localmente sul dispositivo e sincronizzati sul tuo account personale su Firebase (Google Cloud, server UE). Non vengono mai condivisi con terze parti né utilizzati per pubblicità.</li>
+            <li><strong>Accesso in background</strong>: su Android, la posizione viene raccolta anche con lo schermo bloccato durante un allenamento attivo, tramite un servizio in primo piano (notifica visibile). Su iOS, l'accesso avviene solo durante l'utilizzo attivo dell'app.</li>
+            <li><strong>Revoca</strong>: puoi disabilitare l'accesso alla posizione in qualsiasi momento dalle impostazioni del dispositivo. Senza GPS, la funzione di tracciamento percorso non sarà disponibile.</li>
+          </ul>
+
           <h3>Dati generati dall'utilizzo</h3>
           <ul>
             <li><strong>Sessioni di allenamento</strong>: data, distanza, durata, frequenza cardiaca media e massima, percorso GPS (se abilitato), tipo di allenamento.</li>
-            <li><strong>Dati Apple Health</strong>: con il tuo esplicito consenso, importiamo le sessioni di corsa da Apple Health per arricchire l'analisi del coach AI.</li>
+            <li><strong>Dati Apple Health / Health Connect</strong>: con il tuo esplicito consenso, importiamo le sessioni di corsa da Apple Health (iOS) o Google Health Connect (Android) per arricchire l'analisi del coach AI.</li>
             <li><strong>Dati cardiaci BLE</strong>: se connetti un cardiofrequenzimetro Bluetooth, i dati FC vengono elaborati in tempo reale e salvati con la sessione. Non vengono trasmessi a terzi.</li>
           </ul>
 
@@ -115,7 +125,7 @@
           <h2>4. Conservazione dei dati</h2>
           <p>I dati dell'app sono memorizzati in due luoghi:</p>
           <ul>
-            <li><strong>Dispositivo locale</strong>: le sessioni di allenamento, la cache dei piani AI e le preferenze sono salvate localmente sul tuo iPhone tramite storage sicuro.</li>
+            <li><strong>Dispositivo locale</strong>: le sessioni di allenamento, la cache dei piani AI e le preferenze sono salvate localmente sul dispositivo tramite storage sicuro.</li>
             <li><strong>Firebase Firestore (Google Cloud)</strong>: i dati dell'account e le sessioni vengono sincronizzati su server Firebase per permettere il recupero in caso di cambio dispositivo. I server Firebase utilizzati si trovano all'interno dell'Unione Europea (regione europe-west).</li>
           </ul>
           <p>I dati vengono conservati finché mantieni un account attivo. Puoi richiedere la cancellazione completa dei tuoi dati in qualsiasi momento (vedere sezione 8).</p>
@@ -147,7 +157,9 @@
         </div>
 
         <div class="privacy-section" id="health">
-          <h2>7. Dati sanitari (Apple Health)</h2>
+          <h2>7. Dati sanitari</h2>
+
+          <h3>iOS — Apple Health (HealthKit)</h3>
           <p>Con il tuo consenso esplicito, RunBud può leggere i dati di corsa da Apple Health (HealthKit). Questi dati:</p>
           <ul>
             <li>Vengono utilizzati <strong>esclusivamente</strong> per arricchire l'analisi del coach AI.</li>
@@ -156,6 +168,16 @@
             <li>Puoi revocare l'accesso in qualsiasi momento dalle Impostazioni iOS → Privacy → Salute.</li>
           </ul>
           <p>RunBud non scrive dati su Apple Health (solo lettura).</p>
+
+          <h3>Android — Google Health Connect</h3>
+          <p>Con il tuo consenso esplicito, RunBud può accedere a Google Health Connect per leggere e scrivere dati di allenamento (sessioni di corsa, frequenza cardiaca). In dettaglio:</p>
+          <ul>
+            <li>I dati letti da Health Connect vengono utilizzati <strong>esclusivamente</strong> per importare allenamenti passati e arricchire l'analisi del coach AI.</li>
+            <li>I dati scritti su Health Connect (sessioni di corsa registrate nell'app) rimangono sul tuo account Google e non vengono condivisi con terzi da parte nostra.</li>
+            <li>Non vengono mai utilizzati per pubblicità o ricerca di mercato.</li>
+            <li>Puoi revocare l'accesso in qualsiasi momento aprendo l'app Health Connect → Autorizzazioni app → RunBud.</li>
+          </ul>
+          <p>RunBud utilizza Health Connect nel rispetto delle <a href="https://developer.android.com/health-and-fitness/guides/health-connect/publish/policy" target="_blank">norme per gli sviluppatori di Health Connect</a>.</p>
         </div>
 
         <div class="privacy-section" id="rights">
@@ -209,7 +231,7 @@
 <footer class="footer">
   <div class="container">
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 RunBud. Tutti i diritti riservati.</p>
+      <p class="footer-copy">© 2026 RunBud. Tutti i diritti riservati.</p>
       <p class="footer-made"><a href="index.html" style="color:var(--accent-light);text-decoration:none;">← Torna alla home</a></p>
     </div>
   </div>
